@@ -7,7 +7,7 @@
     }
 
     if(!$captcha_data){
-		header("Location: recaptcha.php");
+	header("Location: recaptcha.php");
         exit;
     }
 
@@ -16,9 +16,9 @@
         $captcha_data);
         if($resposta.sucess)
         {
-			$_SESSION['tentativas'] = 0;
+	    $_SESSION['tentativas'] = 0;
             header("Location: index.php");
-		}
+	}
 		
     
 ?>
